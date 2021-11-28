@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <!--Favicon-->
+    <link href="assets/media/favicon.png" rel="icon">
+    <!--Icons from Box Icons and Font Awesome-->
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--CSS file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--Scroll-To-Top button-->
+    <a href="#" class="scrolltop" id="scrolltop">
+        <i class="bx bx-up-arrow"></i>
+    </a>
+
+    <!--Header-->
+    <header class="header" id="header">
+        <nav class="nav bd_container">
+
+            <a href="#" class="nav_logo">Amazing Guitars</a>
+
+            <!--Nav menu-->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active_link">Home</a></li>
+                    <li class="nav_item"><a href="#departments" class="nav_link">Departments</a></li>
+                    <li class="nav_item"><a href="#arrivals" class="nav_link">New Arrivals</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About Us</a></li>
+                </ul>
+            </div>
+
+            <!--Show/hide menu button: should only be visible on mobile screen-->
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main class="main">
+
+        <!--Home-->
+        <section class="home" id="home">
+
+            <!--Image Slider-->
+            <div class="home_container">
+                <div class="slider">
+
+                    <input type="radio" name="slide" class="slide_radio" id="slide-1" checked>
+                    <input type="radio" name="slide" class="slide_radio" id="slide-2">
+                    <input type="radio" name="slide" class="slide_radio" id="slide-3">
+
+                    <div class="slides">
+                        <div class="slide slide_1">
+                            <div class="slide_data slide_data_1">
+                                <h1>Fall Sale 2021</h1>
+                                <p>Our Fall Sale is now on! <br> Check out more than 1,200 items with discounts up to 50%</p>
+                                <a href="#"><button class="slide_button">Shop Now</button></a>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide_data slide_data_2">
+                                <h1>Come visit us</h1>
+                                <p>Come visit us at our new address <br> Amazing Guitar is open every day from 10 am to 8 pm</p>
+                                <a href="#"><button class="slide_button">Get Directions</button></a>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide_data slide_data_3">
+                                <h1>Need some help?</h1>
+                                <p>Feel free to contact us <br> Our expert team is ready to find the perfect gear for you</p>
+                                <a href="#"><button class="slide_button">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Arrows and dots to change active slide-->
+                    <div class="arrows arrow_left">
+                        <label for="slide-3"><span><i class="fas fa-angle-left"></i></span></label>
+                        <label for="slide-1"><span><i class="fas fa-angle-left"></i></span></label>
+                        <label for="slide-2"><span><i class="fas fa-angle-left"></i></span></label>
+                    </div>
+            
+                    <div class="arrows arrow_right">
+                        <label for="slide-2"><span><i class="fas fa-angle-right"></i></span></label>
+                        <label for="slide-3"><span><i class="fas fa-angle-right"></i></span></label>
+                        <label for="slide-1"><span><i class="fas fa-angle-right"></i></span></label>
+                    </div>
+            
+                    <div class="dots">
+                        <label class="dot_1" for="slide-1"></label>
+                        <label class="dot_2" for="slide-2"></label>
+                        <label class="dot_3" for="slide-3"></label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Home info-->
+            <div class="home_info bd_container section">
+                <h1 class="home_title">Welcome to Amazing Guitars</h1>
+                <p class="home_description">Discover the best gear with the best price</p>
+                <a href="#" class="button button_center">Get Started</a>
+            </div>
+
+        </section>
+
+        <!--Departments-->
+        <section class="departments section" id="departments">
+
+            <h2 class="section_title">Choose a Department</h2>
+
+            <div class="departments_container bd_container">
+
+                <div class="departments_data departments_data_left">
+                    <a href="#">
+                        <img src="assets/media/electric_guitar.jpg" alt="" class="departments_img">
+                        <h3 class="departments_title">Electric Guitars</h3>
+                    </a> 
+                </div>
+
+                <div class="departments_data departments_data_left">
+                    <a href="#">
+                        <img src="assets/media/acoustic_guitar.jpg" alt="" class="departments_img">
+                        <h3 class="departments_title">Acoustic Guitars</h3>
+                    </a>
+                </div>
+
+                <div class="departments_data departments_data_right">
+                    <a href="#">
+                        <img src="assets/media/classical_guitar.jpg" alt="" class="departments_img">
+                        <h3 class="departments_title">Classical Guitars</h3>
+                    </a>
+                </div>
+
+                <div class="departments_data departments_data_right">
+                    <a href="#">
+                        <img src="assets/media/bass_guitar.jpg" alt="" class="departments_img">
+                        <h3 class="departments_title">Electric & Acoustic Basses</h3>
+                    </a>
+                </div>
+
+                <div class="departments_data departments_data_left">
+                    <a href="#">
+                        <img src="assets/media/ukulele.jpg" alt="" class="departments_img">
+                        <h3 class="departments_title">Ukuleles, Banjos & More</h3>
+                    </a>
+                </div>
+
+                <div class="departments_data departments_data_left">
+                    <a href="#">
+                        <img src="assets/media/accessories.jpg" alt="" class="departments_img">
+                        <h3 class="departments_title">Amps, Effects & Accessories</h3>
+                    </a>
+                </div>
+
+            </div>
+
+            <a href="#" class="button button_center">View All</a>
+
+        </section>
+
+        <!--New Arrivals-->
+        <section class="arrivals section" id="arrivals">
+        
+            <h2 class="section_title">Check Out The Latest Arrivals</h2>
+
+            <div class="arrivals_container bd_container">
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product1.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="Fender Player Plus Active Jazz Bass Maple Fingerboard Olympic Pearl">Fender Player Plus Active Jazz Bass Maple Fingerboard Olympic Pearl</a></h3>
+                    <span class="product_department">Electric Bass</span>
+                    <span class="product_price">$1,099.99</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product2.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="Gibson Tony Iommi SG Special Electric Guitar Vintage Cherry">Gibson Tony Iommi SG Special Electric Guitar Vintage Cherry</a></h3>
+                    <span class="product_department">Electric Guitar</span>
+                    <span class="product_price">$2,399.00</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product4.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="Fender Player Plus Stratocaster HSS Maple Fingerboard Electric Guitar 3-Color Sunburst">Fender Player Plus Stratocaster HSS Maple Fingerboard Electric Guitar 3-Color Sunburst</a></h3>
+                    <span class="product_department">Electric Guitar</span>
+                    <span class="product_price">$1,029.99</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product3.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="EVH 5150III Iconic Series 40W 1x12 Combo Amp Black">EVH 5150III Iconic Series 40W 1x12 Combo Amp Black</a></h3>
+                    <span class="product_department">Amp</span>
+                    <span class="product_price">$799.99</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product5.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="Alvarez Alvarez Regent Series Dreadnought Cutaway Acoustic-Electric Sunburst">Alvarez Alvarez Regent Series Dreadnought Cutaway Acoustic-Electric Sunburst</a></h3>
+                    <span class="product_department">Acoustic Guitar</span>
+                    <span class="product_price">$269.99</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product8.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="Ernie Ball Music Man Tim Commerford Artist Series Active StingRay Electric Bass Black">Ernie Ball Music Man Tim Commerford Artist Series Active StingRay Electric Bass Black</a></h3>
+                    <span class="product_department">Electric Bass</span>
+                    <span class="product_price">$2,999.00</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product7.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="Death By Audio Deep Animation Bass Overdrive Envelope Follower Effects Pedal Gray">Death By Audio Deep Animation Bass Overdrive Envelope Follower Effects Pedal Gray</a></h3>
+                    <span class="product_department">Pedal</span>
+                    <span class="product_price">$270.00</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="arrivals_data">
+                    <a href="#" class="product_link"><img src="assets/media/product6.png" alt="" class="product_img"></a>
+                    <h3 class="product_title"><a href="#" class="product_link" title="Godin Etude QIT Nylon-String Acoustic-Electric Guitar Natural">Godin Etude QIT Nylon-String Acoustic-Electric Guitar Natural</a></h3>
+                    <span class="product_department">Classical Guitar</span>
+                    <span class="product_price">$629.00</span>
+                    <a href="#" class="button product_button"><i class='bx bx-cart'></i></a>
+                </div>
+
+            </div>
+
+            <a href="#" class="button button_center">View All</a>
+
+        </section>
+
+        <!--About Us-->
+        <section class="about section" id="about">
+
+            <h2 class="section_title about_title">Why Choose Amazing Guitars?</h2>
+
+            <div class="about_container bd_container">
+
+                <div class="about_data">
+                    <img src="assets/media/fast-delivery.png" alt="" class="about_img">
+                    <h3 class="about_item_title">Free Shipping Nationwide</h3>
+                    <a href="#" class="button button_link ">Learn more</a>
+                </div>
+
+                <div class="about_data">
+                    <img src="assets/media/low-price.png" alt="" class="about_img">
+                    <h3 class="about_item_title">Best Price Guarantee</h3>
+                    <a href="#" class="button button_link">45-day matching</a>
+                </div>
+
+                <div class="about_data">
+                    <img src="assets/media/returns.png" alt="" class="about_img">
+                    <h3 class="about_item_title">60-Day Return Policy</h3>
+                    <a href="#" class="button button_link">No hassles</a>
+                </div>
+
+                <div class="about_data">
+                    <img src="assets/media/membership-card.png" alt="" class="about_img">
+                    <h3 class="about_item_title">10% Back In Rewards</h3>
+                    <a href="#" class="button button_link">Free to join</a>
+                </div>
+
+            </div>
+
+            <div class="newsletter_container bd_container">
+
+                <div class="newsletter_content">
+                    <h2 class="newsletter_title">Sign Up Now</h2>
+                    <p class="newsletter_description">And receive a $30 reward to spend on your first purchase</p>
+                    <form action="" class="form">
+                        <div class="newsletter_form">
+                            <input type="email" placeholder="Enter your email" class="email_input" required>
+                            <button class="button submit_button" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="footer section" id="footer">
+
+        <div class="footer_container bd_container">
+
+            <div class="footer_content">
+                <h3 class="footer_title">More About Amazing Guitars</h3>
+                <ul>
+                    <li><a href="#" class="footer_link">Blog</a></li>
+                    <li><a href="#" class="footer_link">Our Commitment</a></li>
+                    <li><a href="#" class="footer_link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">More About Our Services</h3>
+                <ul>
+                    <li><a href="#" class="footer_link">Pricing & Discounts</a></li>
+                    <li><a href="#" class="footer_link">Shipping</a></li>
+                    <li><a href="#" class="footer_link">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Connect With Us</h3>
+                <a href="#" class="footer_social"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#" class="footer_social"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="footer_social"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#" class="footer_social"><i class='bx bxl-youtube'></i></a>
+            </div>
+
+        </div>
+
+        <p class="footer_copy">&#169; 2021 Amazing Guitars. All rights reserved.</p>
+
+    </footer>
+
+    <!--Scroll reveal effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--JavaScript file-->
+    <script src="assets/javascript/main.js"></script>
+
+</body>
+</html>
