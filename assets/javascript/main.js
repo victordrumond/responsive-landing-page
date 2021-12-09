@@ -31,7 +31,7 @@ const hideMenu = () => {
 hideMenu();
 
 
-// The code below will make the active menu link be always marked //
+// The code below will make the active menu link always be marked //
 const scrollActive = () => {
 
     const sections = document.querySelectorAll("section[id]");
@@ -85,7 +85,7 @@ const autoPlay = () => {
 
     // This function will be called again every 8000 ms
     setInterval(() => {
-    
+
         const slides = document.getElementsByClassName("slide_radio");
 
         if (slides[0].checked == true) {
@@ -131,7 +131,7 @@ const fixAnimations = () => {
 
     const departmentsData = document.getElementsByClassName("departments_data");
 
-    // Grid layout changes if screen is large enough, therefore animations should also change
+    // Grid layout changes if screen is large enough, therefore animations also change
     if (screen.width > 575) {
 
         for (let i = 0; i < departmentsData.length; i++) {
@@ -149,7 +149,7 @@ const fixAnimations = () => {
 fixAnimations();
 
 
-// The code below will add animations when user scrolls the page - from https://scrollrevealjs.org //
+// The code below will add animations from ScrollReveal //
 const scrollAnimations = () => {
 
     const sr = ScrollReveal({
