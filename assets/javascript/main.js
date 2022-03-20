@@ -81,27 +81,38 @@ window.addEventListener("scroll", scrollTop);
 
 
 // The code below will set an autoplay function to the image slider //
-const autoPlay = () => {
+const autoPlayFunction = () => {
 
-    // This function will be called again every 8000 ms
-    setInterval(() => {
+    const slides = document.getElementsByClassName("slide_radio");
 
-        const slides = document.getElementsByClassName("slide_radio");
+    if (slides[0].checked) {
+        slides[0].checked = false;
+        slides[1].checked = true;
+    } else if (slides[1].checked) {
+        slides[1].checked = false;
+        slides[2].checked = true;
+    } else if (slides[2].checked) {
+        slides[2].checked = false;
+        slides[0].checked = true;
+    };
 
-        if (slides[0].checked == true) {
-            slides[0].checked = false;
-            slides[1].checked = true;
-        } else if (slides[1].checked == true) {
-            slides[1].checked = false;
-            slides[2].checked = true;
-        } else if (slides[2].checked == true) {
-            slides[2].checked = false;
-            slides[0].checked = true;
-        };
-    }, 8000);
 };
 
-autoPlay();
+// autoPlayFunction will be called again every 10 seconds
+let startAutoPlay = setInterval(autoPlayFunction, 10000);
+
+// The code below will reset the autoplay function when necessary //
+const resetAutoPlay = () => {
+
+    clearInterval(startAutoPlay);
+    startAutoPlay = setInterval(autoPlayFunction, 10000);
+};
+
+// autoPlayFunction will be reset whenever user clicks on a dot or arrow icon
+let arrowsAndDots = document.querySelectorAll(".dot, .arrow");
+for (let i = 0; i < arrowsAndDots.length; i++) {
+    arrowsAndDots[i].addEventListener("click", resetAutoPlay);
+};
 
 
 // The code below will change the header style when user scrolls the page //
